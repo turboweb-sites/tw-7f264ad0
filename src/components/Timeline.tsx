@@ -51,7 +51,6 @@ export default function Timeline() {
         </div>
 
         <div className="relative">
-          {/* Center line */}
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-500/50 via-blue-500/50 to-purple-500/50" />
 
           <div className="space-y-12 md:space-y-16">
@@ -62,7 +61,6 @@ export default function Timeline() {
                   i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
               >
-                {/* Content */}
                 <div className={`flex-1 ${i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
                   <div className="p-5 md:p-6 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:border-white/10 transition-all duration-300">
                     <div className="text-3xl mb-3">{milestone.emoji}</div>
@@ -76,10 +74,8 @@ export default function Timeline() {
                   </div>
                 </div>
 
-                {/* Dot */}
                 <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 border-4 border-slate-950 z-10 mt-8" />
 
-                {/* Spacer */}
                 <div className="hidden md:block flex-1" />
               </div>
             ))}

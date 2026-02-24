@@ -39,7 +39,6 @@ export default function Languages() {
           </p>
         </div>
 
-        {/* Language tabs */}
         <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8">
           {helloWorldExamples.map((ex, i) => (
             <button
@@ -57,7 +56,6 @@ export default function Languages() {
           ))}
         </div>
 
-        {/* Code display */}
         <div className="rounded-2xl overflow-hidden border border-white/10 bg-slate-900/80 backdrop-blur-sm">
           <div className="flex items-center gap-2 px-4 py-3 border-b border-white/5">
             <div className="w-3 h-3 rounded-full bg-red-500/80" />

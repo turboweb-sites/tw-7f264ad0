@@ -1,4 +1,3 @@
-
 import { Heart, Globe } from 'lucide-react';
 
 export default function Footer() {

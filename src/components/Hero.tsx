@@ -29,29 +29,31 @@ export default function Hero() {
           src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/7f264ad0-ec68-4512-9607-c4c0b023adf9/acc3db5b-6de7-416d-9c2f-42f54858dc33/image_0e76df_1771892977976_8tfgxz.webp"
           alt="Phoenix"
           className="w-full h-full object-cover opacity-30"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/40" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950" />
       </div>
 
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '0.8s' }} />
+      {/* Simplified glow orbs — fewer on mobile, no animation on mobile */}
+      <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-blue-500/15 rounded-full blur-3xl md:animate-pulse-glow" />
+      <div className="absolute bottom-1/4 right-1/4 w-52 md:w-80 h-52 md:h-80 bg-purple-500/15 rounded-full blur-3xl md:animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '0.8s' }} />
 
-      {/* Floating icons */}
-      <div className="absolute top-20 left-10 md:left-20 animate-float">
+      {/* Floating icons — hidden on small mobile */}
+      <div className="hidden sm:block absolute top-20 left-10 md:left-20 animate-float">
         <Globe className="w-8 h-8 md:w-12 md:h-12 text-blue-400/40" />
       </div>
-      <div className="absolute top-32 right-10 md:right-32 animate-float-delayed">
+      <div className="hidden sm:block absolute top-32 right-10 md:right-32 animate-float-delayed">
         <Sparkles className="w-6 h-6 md:w-10 md:h-10 text-yellow-400/40" />
       </div>
-      <div className="absolute bottom-32 left-10 md:left-32 animate-float-slow">
+      <div className="hidden sm:block absolute bottom-32 left-10 md:left-32 animate-float-slow">
         <Heart className="w-7 h-7 md:w-10 md:h-10 text-pink-400/40" />
       </div>
-      <div className="absolute bottom-20 right-10 md:right-20 animate-float">
+      <div className="hidden sm:block absolute bottom-20 right-10 md:right-20 animate-float">
         <Rocket className="w-8 h-8 md:w-12 md:h-12 text-purple-400/40" />
       </div>
-      <div className="absolute top-1/2 left-5 md:left-10 animate-float-delayed">
+      <div className="hidden md:block absolute top-1/2 left-5 md:left-10 animate-float-delayed">
         <Star className="w-6 h-6 md:w-8 md:h-8 text-cyan-400/40" />
       </div>
 

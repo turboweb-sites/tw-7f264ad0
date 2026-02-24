@@ -5,7 +5,6 @@ export default function CTA() {
     <section className="relative py-24 md:py-32 bg-slate-950">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-pink-500/50 to-transparent" />
 
-      {/* Background glow */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-3xl" />
       </div>

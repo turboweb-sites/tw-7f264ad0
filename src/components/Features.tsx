@@ -76,7 +76,6 @@ export default function Features() {
               <p className="text-slate-400 leading-relaxed">
                 {feature.description}
               </p>
-              {/* Hover glow */}
               <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
             </div>
           ))}
