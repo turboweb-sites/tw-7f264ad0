@@ -3,7 +3,7 @@ import { Globe, Sparkles, Heart, Rocket, Star } from 'lucide-react';
 
 export default function Hero() {
   const [typedText, setTypedText] = useState('');
-  const fullText = 'Привет, Мир!';
+  const fullText = 'Зарова Епты';
 
   useEffect(() => {
     let index = 0;
@@ -19,7 +19,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradients */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-950 to-purple-950" />
 
@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <img
           src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/7f264ad0-ec68-4512-9607-c4c0b023adf9/acc3db5b-6de7-416d-9c2f-42f54858dc33/image_0e76df_1771892977976_8tfgxz.webp"
-          alt="Phoenix"
+          alt="Hero Banner"
           className="w-full h-full object-cover opacity-30"
           loading="eager"
         />

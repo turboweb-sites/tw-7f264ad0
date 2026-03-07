@@ -1,4 +1,5 @@
 import ParticleField from './components/ParticleField';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Features from './components/Features';
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden">
       <ParticleField />
+      <Navbar />
       <Hero />
       <About />
       <Features />
